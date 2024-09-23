@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button {
+        background-color: blue;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button
+      onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+      cartQuantity = cartQuantity + 1
+      console.log(`Cart quantity: ${cartQuantity}`);
+    "
+    >
+      Add to cart
+    </button>
+    <button
+      onclick="
+    cartQuantity = cartQuantity + 2
+    console.log(`Cart quantity: ${cartQuantity}`);"
+    >
+      +2
+    </button>
+
+    <button
+      onclick="
+      cartQuantity = 0;
+      console.log(`Cart quantity: ${cartQuantity}`);
+    "
+    >
+      Reset
+    </button>
+
+    <script>
+      const product = {
+        name: "Shirt",
+        "delivery-time": "1 day",
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product["delivery-time"]);
+      console.log(JSON.stringify(product));
+    </script>
+  </body>
+</html>
