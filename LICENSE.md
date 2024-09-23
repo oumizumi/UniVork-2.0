@@ -1,4 +1,4 @@
-Custom License for [Your Project Name]
+Custom License for UniVork
 1. Grant of License
 Permission is hereby granted to the Authorized Individuals to access, use, and modify the code contained within this repository solely for the purpose of contributing to the development of the web application project under the supervision of Vahid Sobhanieh (the Owner).
 
