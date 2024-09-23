@@ -1,2 +1,2 @@
 Hello Everybody,
-Please read the LICENSE.md file before you start working on the repository
+Please read the LICENSE.md file or License tab before you start working on the repository
