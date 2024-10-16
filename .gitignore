@@ -1,0 +1,10 @@
+# Ignore the virtual environment
+djangoenv/
+
+# Ignore bytecode and cache files
+*.pyc
+__pycache__/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
