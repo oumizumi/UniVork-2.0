@@ -1,0 +1,79 @@
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.sidebar-nav li:hover {
+    background-color: #f7f7f7;
+    color: #000000;
+}
+
+.sidebar-nav li.active {
+    background-color: #f0f0f0;
+    color: #000000;
+    border-left: 3px solid #000000;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background: #333333;
+}
+
+.job-type {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.job-card:hover {
+    border-color: #000000;
+    transform: translateY(-2px);
+}
+
+.job-card.selected {
+    border-color: #000000;
+    background: #f0f0f0;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #f7f7f7;
+    border-color: #000000;
+}
+
+.apply-button {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.apply-button:hover {
+    background: #333333;
+}
