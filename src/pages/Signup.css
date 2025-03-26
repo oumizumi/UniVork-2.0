@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  background-color: #6c8e6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it adapts to all screen heights */
+  padding: 1rem; /* Prevent content from touching edges */
+  box-sizing: border-box;
+}
+
+.signup-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 90%; /* Adjust width for smaller screens */
+  width: 900px; /* Original width for larger screens */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 3.38rem); /* Responsive font size with clamp */
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap; /* Stack options on smaller screens */
+  justify-content: center;
+  gap: 1.5rem; /* Add consistent spacing between items */
+  margin-bottom: 2rem;
+}
+
+.option {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 calc(45% - 1rem); /* Adjusts size dynamically (2 options per row) */
+  max-width: 400px; /* Prevents overly wide options */
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.option.selected {
+  background-color: #e1e1e1;
+  border: 2px solid #769d6b;
+}
+
+.option.selected::before {
+  background-color: #37642a;
+  border: 2px solid #769d6b;
+}
+
+.option p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size with clamp */
+  line-height: 1.5;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.option::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.create-account {
+  background-color: transparent;
+  color: #769d6b;
+  border: 2px solid #769d6b;
+  padding: 0.75rem 2.5rem; /* Scaled down padding for smaller screens */
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem; /* Responsive font size */
+  margin-bottom: 1.5rem;
+}
+
+.create-account:disabled {
+  background-color: #d3d3d3;
+  color: #949090;
+  cursor: not-allowed;
+}
+
+.login-prompt {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1rem); /* Responsive font size with clamp */
+  color: #949090;
+}
+
+.login-prompt span {
+  color: #769d6b;
+  cursor: pointer;
+}
+
+.option p span {
+  text-transform: lowercase;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .signup-box {
+    padding: 1.5rem;
+  }
+
+  .option {
+    flex: 1 1 calc(100% - 2rem); /* Stacks options vertically */
+  }
+
+  .create-account {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: 0.5rem 2rem;
+  }
+
+  .login-prompt {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+  }
+  .option p { 
+    font-size: clamp(1rem, 3vw, 1.25rem); /* Responsive font size with clamp */
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 1rem;
+  }
+
+  .option {
+    padding: 1rem;
+  }
+
+  .create-account {
+    font-size: clamp(0.7rem, 3vw, 0.8rem);
+    padding: 0.5rem 1.5rem;
+  }
+
+  .login-prompt {
+    font-size: clamp(0.7rem, 3vw, 0.8rem);
+  }
+
+  .option p {
+    font-size: clamp(0.75rem, 3vw, 1rem); /* Responsive font size with clamp */
+  }
+}
+
+
+
+
+
+
+
+
+

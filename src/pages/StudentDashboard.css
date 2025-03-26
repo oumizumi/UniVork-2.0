@@ -1,79 +1,58 @@
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000;
-}
+/* Main Content Area */
+.student-dashboard {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Adjust for smaller screens */
+  }
+  
+  .main-content {
+    margin-left: 15%; /* Matches the sidebar width */
+    padding: 20px;
+    width: calc(85%); /* Adjust to fit the screen minus the sidebar */
+    overflow-y: auto;
+    box-sizing: border-box; /* Include padding in width/height calculation */
+    transition: margin-left 0.3s, width 0.3s; /* Smooth transition for responsiveness */
+    margin-top: 20px; /* Space from the navigation bar */
+    margin-bottom: 20px; /* Space from the footer */
+  }
 
-.sidebar-nav li:hover {
-    background-color: #f7f7f7;
-    color: #000000;
-}
+  .update-status {
+    margin-top: 100px; 
+    position: relative; 
+    padding: 10px;
+    text-align: center;
+    width: 100%;   /* it centered it */ 
+  }
 
-.sidebar-nav li.active {
-    background-color: #f0f0f0;
-    color: #000000;
-    border-left: 3px solid #000000;
-}
+  .initialMessage {
+    margin-top: 100px; 
+    position: relative; 
+    padding: 10px;
+    text-align: center;
+    width: 100%;   
+  }
+  
+  /* Responsive Adjustments for Main Content */
+  @media (max-width: 1024px) {
+    .main-content {
+      margin-left: 20%; /* Adjust for narrower sidebar */
+      width: calc(80%); /* Adjust to match the sidebar size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 25%; /* Sidebar gets narrower */
+      width: calc(75%); /* Adjust accordingly */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-content {
+      margin-left: 0; /* No sidebar on very small screens */
+      width: 100%; /* Full width for content */
+    }
+  }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-    border-color: #000000;
-    outline: none;
-}
-
-.submit-button {
-    width: 100%;
-    padding: 12px;
-    background: #000000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s;
-    margin-top: 20px;
-}
-
-.submit-button:hover {
-    background: #333333;
-}
-
-.job-type {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.job-card:hover {
-    border-color: #000000;
-    transform: translateY(-2px);
-}
-
-.job-card.selected {
-    border-color: #000000;
-    background: #f0f0f0;
-}
-
-.pagination button:hover:not(:disabled) {
-    background: #f7f7f7;
-    border-color: #000000;
-}
-
-.apply-button {
-    width: 100%;
-    padding: 12px;
-    background: #000000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.apply-button:hover {
-    background: #333333;
-}
+  
+  

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.signup-form-container {
+  background-color: #6c8e6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem;
+  box-sizing: border-box; 
+}
+
+.signup-form-box {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 90%; 
+  width: 500px; 
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+  margin: 0.63rem; 
+}
+
+.header1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 1.56rem; 
+  font-size: clamp(1.5rem, 4vw, 2rem);
+
+}
+
+.input-field {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.input-field label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
+  color: #756868;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 0.63rem;
+  margin-top: 0.31rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.88rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.94rem;
+  text-align: left;
+  font-size: 0.88rem;
+  justify-content: flex-start;
+}
+
+.checkbox-group input {
+  margin-right: 0.63;
+  width: 1.13rem;
+  height: 1.13rem;
+}
+
+.create-account {
+  background-color: transparent;
+  color: #769d6b;
+  border: 2px solid #769d6b;
+  padding: 0.75rem 3.13rem; 
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem; 
+  margin-bottom: 1.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-account:disabled {
+  background-color: #d3d3d3;
+  color: #949090;
+  cursor: not-allowed;
+}
+
+.create-account:hover:enabled {
+  background-color: #769d6b;
+  color: white; 
+}
+
+.error-message {
+  color: red;
+  font-size: 0.88rem;
+  margin-top: -0.63rem;
+  margin-bottom: 0.94rem;
+}
+
+.login-prompt {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #949090;
+}
+
+.login-prompt span {
+  color: #769d6b;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 0.8em; 
+  display: block; 
+  margin-top: 0.31rem; 
+  color: #555; 
+}
+ 
+
+  @media (max-width: 700px) { /* working */
+
+  .signup-form-box {
+    padding: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .header1 {
+    font-size: 1.25rem; 
+    line-height: 2rem; 
+    margin-bottom: 1.25rem; 
+  }
+
+  .create-account {
+    padding: 0.5rem 0.8rem; 
+    font-size: 0.88rem; 
+  }
+
+}  
+
+ @media (max-width: 480px) {
+  .signup-form-box {
+    padding: 1.25rem;
+  }
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .header1 {
+    font-size: 0.88rem; 
+    line-height: 1.25rem; 
+    margin-bottom: 0.88rem; 
+  }
+
+  .create-account {
+    padding: 0.1rem 0.2rem; 
+    font-size: 0.05rem; 
+  }
+} 
